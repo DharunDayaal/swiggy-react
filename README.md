@@ -1,8 +1,15 @@
-# React + Vite
+<h1>Swiggy React Project</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>This is a clone project of Swiggy developed using React</p>
 
-Currently, two official plugins are available:
+<h2>Tech Stack</h2>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>React</li>
+    <li>Bootstrap</li>
+</ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Visit Website</h3>
+<a href="swiggy-app-react.vercel.app">Swiggy-app</a>
