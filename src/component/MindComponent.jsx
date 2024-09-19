@@ -8,7 +8,7 @@ const MindComponent = () => {
   useEffect(() => {
     const images = [];
     for (let i = 1; i < 15; i++) {
-      const imgSrc = `./src/assets/images/${i}.avif`;
+      const imgSrc = new URL(`./src/assets/images/${i}.avif`, import.meta.url).href;
       images.push({ imgSrc });
     }
     setImageItems(images);
@@ -34,16 +34,19 @@ const MindComponent = () => {
     }
   };
 
+  const prevBtnURL = new URL(`./src/assets/icons/backward-arrow`, import.meta.url).href;
+  const nextBtnURL = new URL(`./src/assets/icons/forward-arrow`, import.meta.url).href;
+
   return (
     <div className="mind-container">
       <div className="d-lg-flex flex-lg-row justify-content-lg-between align-items-center">
         <h2>What's on your mind?</h2>
         <div className="btn-group-lg btn-group-sm">
           <button className="prev-btn me-lg-3 me-md-3 me-3" onClick={handlePreviousButton}>
-            <img src="./src/assets/icons/backward-arrow.svg" alt="prev-btn" />
+            <img src={prevBtnURL} alt="prev-btn" />
           </button>
           <button className="next-btn" onClick={handleNextButton}>
-            <img src="./src/assets/icons/forward-arrow.svg" alt="next-btn" />
+            <img src={nextBtnURL} alt="next-btn" />
           </button>
         </div>
       </div>
