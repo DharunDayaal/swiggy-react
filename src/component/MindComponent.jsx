@@ -5,10 +5,19 @@ const MindComponent = () => {
   const [imageItems, setImageItems] = useState([]);
   const scrollReference = useRef(null);
 
+  const buttonIcons = {
+    previousButtonIcon: (
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+    ),
+    nextButtonIcon: (
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+    )
+  }
+
   useEffect(() => {
     const images = [];
     for (let i = 1; i < 15; i++) {
-      const imgSrc = new URL(`./src/assets/images/${i}.avif`, import.meta.url).href;
+      const imgSrc = `./src/assets/images/${i}.avif`;
       images.push({ imgSrc });
     }
     setImageItems(images);
@@ -34,19 +43,16 @@ const MindComponent = () => {
     }
   };
 
-  const prevBtnURL = new URL(`./src/assets/icons/backward-arrow`, import.meta.url).href;
-  const nextBtnURL = new URL(`./src/assets/icons/forward-arrow`, import.meta.url).href;
-
   return (
     <div className="mind-container">
       <div className="d-lg-flex flex-lg-row justify-content-lg-between align-items-center">
         <h2>What's on your mind?</h2>
         <div className="btn-group-lg btn-group-sm">
           <button className="prev-btn me-lg-3 me-md-3 me-3" onClick={handlePreviousButton}>
-            <img src={prevBtnURL} alt="prev-btn" />
+            {buttonIcons.previousButtonIcon}
           </button>
           <button className="next-btn" onClick={handleNextButton}>
-            <img src={nextBtnURL} alt="next-btn" />
+            {buttonIcons.nextButtonIcon}
           </button>
         </div>
       </div>
