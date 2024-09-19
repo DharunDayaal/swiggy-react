@@ -36,7 +36,7 @@ const NavbarComponent = () => {
         <div className="nav w-100">
           <div className="nav-item other-icon">
             <img src="/swiggy-1.svg" alt="siggy-icon" />
-            <div className="container w-auto d-lg-flex justify-content-between">
+            <div className="container w-auto d-lg-flex justify-content-lg-between align-items-lg-center">
               <h5>Other</h5>
               <img
                 src="./src/assets/icons/downArrow.svg"
