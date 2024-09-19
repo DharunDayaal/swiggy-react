@@ -39,7 +39,7 @@ const NavbarComponent = () => {
             <div className="container w-auto d-lg-flex justify-content-lg-between align-items-lg-center">
               <h5>Other</h5>
               <img
-                src="./src/assets/icons/downArrow.svg"
+                src="/src/assets/icons/downArrow.svg"
                 alt="downarrow-icon"
               />
             </div>
