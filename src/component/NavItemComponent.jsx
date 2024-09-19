@@ -1,5 +1,5 @@
 import React from 'react'
-import "../component/NavbarComponent.css"
+import "../component/navbarComponent.css"
 
 const NavItemComponent = ({name, svgElement}) => {
   return (
