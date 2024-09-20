@@ -1,0 +1,122 @@
+[
+    {
+        "restaurant": "Burger King",
+        "discount": "60% OFF UPTO",
+        "price": "120",
+        "rating": 4.3,
+        "delivery_time": "20-25 mins",
+        "cuisine": "Burgers, American",
+        "location": "Kancheepuram",
+        "image": "/burger-king.avif"
+    },
+    {
+        "restaurant": "Chinese Wok",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Chinese",
+        "location": "Kancheepuram",
+        "image": "/chinese-wok.avif"
+    },
+    {
+        "restaurant": "McDonalds",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Burgers, American",
+        "location": "Kancheepuram",
+        "image": "/mcdonalds.avif"
+    },
+    {
+        "restaurant": "KFC",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Burgers, American",
+        "location": "Kancheepuram",
+        "image": "/kf.avif"
+    },
+    {
+        "restaurant": "La-pino's Pizza",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Pizza",
+        "location": "Kancheepuram",
+        "image": "/la-pino's-pizza.avif"
+    },
+    {
+        "restaurant": "Subway",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Subs, Sandwiches",
+        "location": "Kancheepuram",
+        "image": "/subway.avif"
+    },
+    {
+        "restaurant": "Pizza Hut",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Burgers, American",
+        "location": "Kancheepuram",
+        "image": "/pizza-hut.avif"
+    },
+    {
+        "restaurant": "Dominos Pizza",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Burgers, American",
+        "location": "Kancheepuram",
+        "image": "/dominos-pizza.avif"
+    },
+    {
+        "restaurant": "Wow-momo",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Burgers, American",
+        "location": "Kancheepuram",
+        "image": "/wow-momo.avif"
+    },
+    {
+        "restaurant": "Sharvan",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Burgers, American",
+        "location": "Kancheepuram",
+        "image": "/sharvan.avif"
+    },
+    {
+        "restaurant": "Rolls",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Burgers, American",
+        "location": "Kancheepuram",
+        "image": "/12.avif"
+    },
+    {
+        "restaurant": "Gareem Kulfi",
+        "discount": "60% OFF UPTO",
+        "rating": 4.3,
+        "price": "120",
+        "delivery_time": "20-25 mins",
+        "cuisine": "Burgers, American",
+        "location": "Kancheepuram",
+        "image": "/graeem-kulfi.avif"
+    }
+]
