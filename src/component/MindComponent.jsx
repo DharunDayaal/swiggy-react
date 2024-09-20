@@ -17,7 +17,7 @@ const MindComponent = () => {
   useEffect(() => {
     const images = [];
     for (let i = 1; i < 15; i++) {
-      const imgSrc = `./src/assets/images/${i}.avif`;
+      const imgSrc = `/${i}.avif`;
       images.push({ imgSrc });
     }
     setImageItems(images);

@@ -38,10 +38,7 @@ const NavbarComponent = () => {
             <img src="/swiggy-1.svg" alt="siggy-icon" />
             <div className="container w-auto d-lg-flex justify-content-lg-between align-items-lg-center">
               <h5>Other</h5>
-              <img
-                src="/src/assets/icons/downArrow.svg"
-                alt="downarrow-icon"
-              />
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff5e00"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </div>
           </div>
           <div className="d-lg-flex flex-lg-row justify-content-lg-between algin-items-lg-center">
