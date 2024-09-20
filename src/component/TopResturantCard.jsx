@@ -31,7 +31,8 @@ const TopResturantCard = ({ restaurant, discount, rating, price, deliveryTime, c
                 {starIcon}
                 <h5>{rating} <span>&#xb7;</span> {deliveryTime}</h5>
             </div>
-            <p>{cusine} {location}</p>
+            <p>{cusine}</p>
+            <p>{location}</p>
         </div>
       </div>
     </>

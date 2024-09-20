@@ -95,7 +95,7 @@ const TopRestaurantComponent = () => {
           </div>
         </div>
         <div className="card-slider">
-          <div className="img-list mt-5 mb-5" ref={restaurantScrollIndex}>
+          <div className="img-list mt-5 mb-2" ref={restaurantScrollIndex}>
             {cardData.map(({ restaurant, discount, rating, price, delivery_time, cuisine, location, image }, index) => (
               <TopResturantCard
                 key={index}
