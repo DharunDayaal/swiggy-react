@@ -12,4 +12,4 @@
 </ul>
 
 <h3>Visit Website</h3>
-<a href="swiggy-app-react.vercel.app">Swiggy-app</a>
+<a href="https://swiggy-app-react.vercel.app">Swiggy-app</a>
