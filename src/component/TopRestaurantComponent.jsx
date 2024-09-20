@@ -1,35 +1,84 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import TopResturantCard from './TopResturantCard';
-import '../component/topRestaurantComponent.css'
+import '../component/topRestaurantComponent.css';
 
 const TopRestaurantComponent = () => {
-
   const [cardData, setCardData] = useState([]);
+  const pathToJsonFile = '/cardDetails.json';
+  const [scrollThumbWidth, setScrollThumbWidth] = useState(0);
+  const [scrollThumbPosition, setScrollThumbPosition] = useState(0);
+  const restaurantScrollIndex = useRef(null);
+  const scrollbarThumbRef = useRef(null);
+  const buttonIcons = {
+    previousButtonIcon: (
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+        <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+      </svg>
+    ),
+    nextButtonIcon: (
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+      </svg>
+    ),
+  };
 
-  const pathToJsonFile = '/cardDetails.json'
   useEffect(() => {
     const fetchCardData = async () => {
       try {
         const response = await axios.get(pathToJsonFile);
-        setCardData(response.data )
+        setCardData(response.data);
+        updateScrollThumb();
+      } catch (e) {
+        console.log('Error fetching the Data ', e);
       }
-      catch(e){
-        console.log("Error on fetching the Data ", e);
-      }
-    }
+    };
     fetchCardData();
-  }, [])
-  console.log(cardData)
-  
-  const buttonIcons = {
-    previousButtonIcon: (
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
-    ),
-    nextButtonIcon: (
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-    )
-  }
+
+    const updateScrollThumb = () => {
+      if (restaurantScrollIndex.current && scrollbarThumbRef.current) {
+        const scrollableWidth = restaurantScrollIndex.current.scrollWidth;
+        const visibleWidth = restaurantScrollIndex.current.clientWidth;
+        const scrollThumbWidth = (visibleWidth / scrollableWidth) * 100;
+        setScrollThumbWidth(scrollThumbWidth);
+      }
+    };
+
+    updateScrollThumb();
+    
+    return () => {
+      window.removeEventListener('resize', updateScrollThumb);
+    };
+  }, []);
+
+  const handleRestaurantPreviousButton = () => {
+    const gap = parseInt(window.getComputedStyle(restaurantScrollIndex.current).gap, 10);
+    if (restaurantScrollIndex.current) {
+      restaurantScrollIndex.current.scrollBy({
+        left: -(200 * 3 + gap * 2),
+        behavior: 'smooth',
+      });
+      updateThumbPosition();
+    }
+  };
+
+  const handleRestaurantNextButton = () => {
+    const gap = parseInt(window.getComputedStyle(restaurantScrollIndex.current).gap, 10);
+    if (restaurantScrollIndex.current) {
+      restaurantScrollIndex.current.scrollBy({
+        left: 200 * 3 + gap * 2,
+        behavior: 'smooth',
+      });
+      updateThumbPosition();
+    }
+  };
+
+  const updateThumbPosition = () => {
+    const scrollableWidth = restaurantScrollIndex.current.scrollWidth - restaurantScrollIndex.current.clientWidth;
+    const scrollLeft = restaurantScrollIndex.current.scrollLeft;
+    const thumbPosition = (scrollLeft / scrollableWidth) * 100;
+    setScrollThumbPosition(thumbPosition);
+  };
 
   return (
     <>
@@ -37,24 +86,49 @@ const TopRestaurantComponent = () => {
         <div className="d-lg-flex flex-lg-row justify-content-lg-between align-items-center">
           <h2>What's on your mind?</h2>
           <div className="btn-group-lg btn-group-sm">
-            <button className="prev-btn me-lg-3 me-md-3 me-3" >
-                {buttonIcons.previousButtonIcon}
+            <button className="prev-btn me-lg-3 me-md-3 me-3" onClick={handleRestaurantPreviousButton}>
+              {buttonIcons.previousButtonIcon}
             </button>
-            <button className="next-btn" >
+            <button className="next-btn" onClick={handleRestaurantNextButton}>
               {buttonIcons.nextButtonIcon}
             </button>
           </div>
         </div>
-        <TopResturantCard restaurant="burgerKing" discount="60%" rating="4.5" price="120" deliveryTime="10-20mins" cusine="burgers, American" location="Kancheepuram" image='/burger-king.avif' />
-        <div class="slider-scrollbar">
-          <div class="scrollbar-track">
-            <div class="scrollbar-thumb"></div>
+        <div className="card-slider">
+          <div className="img-list mt-5 mb-5" ref={restaurantScrollIndex}>
+            {cardData.map(({ restaurant, discount, rating, price, delivery_time, cuisine, location, image }, index) => (
+              <TopResturantCard
+                key={index}
+                restaurant={restaurant}
+                discount={discount}
+                rating={rating}
+                price={price}
+                deliveryTime={delivery_time}
+                cusine={cuisine}
+                location={location}
+                image={image}
+              />
+            ))}
           </div>
         </div>
-        <div class="bottom-line"></div>
+      
+        <div className="slider-scrollbar">
+          <div className="scrollbar-track">
+            <div
+              className="scrollbar-thumb"
+              ref={scrollbarThumbRef}
+              style={{
+                left: `${scrollThumbPosition}%`,
+                scrollBehavior: "smooth",
+              }}
+            ></div>
+          </div>
+        </div>
+        <div className="bottom-line"></div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default TopRestaurantComponent
+export default TopRestaurantComponent;
+
