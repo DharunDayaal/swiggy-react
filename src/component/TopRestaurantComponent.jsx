@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import TopResturantCard from './TopResturantCard';
+import ReactLoading from 'react-loading';
 import '../component/topRestaurantComponent.css';
 
 const TopRestaurantComponent = () => {
@@ -8,6 +9,7 @@ const TopRestaurantComponent = () => {
   const pathToJsonFile = '/cardDetails.json';
   const [scrollThumbWidth, setScrollThumbWidth] = useState(0);
   const [scrollThumbPosition, setScrollThumbPosition] = useState(0);
+  const [loading, setLoading] = useState(false);
   const restaurantScrollIndex = useRef(null);
   const scrollbarThumbRef = useRef(null);
   const buttonIcons = {
@@ -28,6 +30,7 @@ const TopRestaurantComponent = () => {
       try {
         const response = await axios.get(pathToJsonFile);
         setCardData(response.data);
+        setLoading(true);
         updateScrollThumb();
       } catch (e) {
         console.log('Error fetching the Data ', e);
@@ -96,7 +99,7 @@ const TopRestaurantComponent = () => {
         </div>
         <div className="card-slider">
           <div className="img-list mt-5 mb-2" ref={restaurantScrollIndex}>
-            {cardData.map(({ restaurant, discount, rating, price, delivery_time, cuisine, location, image }, index) => (
+            {loading ? cardData.map(({ restaurant, discount, rating, price, delivery_time, cuisine, location, image }, index) => (
               <TopResturantCard
                 key={index}
                 restaurant={restaurant}
@@ -108,7 +111,7 @@ const TopRestaurantComponent = () => {
                 location={location}
                 image={image}
               />
-            ))}
+            )) : (<div className='loading-animation'><ReactLoading type='balls' color='#6366F1' width='100px' height='100px' /></div>) }
           </div>
         </div>
       
