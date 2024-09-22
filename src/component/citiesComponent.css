@@ -1,0 +1,42 @@
+.cities-container {
+    width: 100%;
+    padding: 0 10%;
+    margin: 2rem 0 0 0;
+}
+
+.cities-container h2 {
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    font-size: 22px;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.cities {
+    border: 1.5px solid rgba(2, 6, 12, 0.1);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.cities div {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin: 0;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12);
+    overflow: hidden;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.cities-container .row {
+    margin-bottom: 1.2rem;
+}
