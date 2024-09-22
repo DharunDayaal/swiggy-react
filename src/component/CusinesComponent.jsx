@@ -2,7 +2,7 @@ import React from 'react'
 import './citiesComponent.css'
 import CityComponent from './CityComponent'
 
-const CitiesComponent = () => {
+const CusinesComponent = () => {
 
 	const moreIcon = (
 		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -10,45 +10,45 @@ const CitiesComponent = () => {
 
   return (
     <>
-      <div className='cities-container'>
+      <div className='cities-container cusines-container'>
 				<h2>Best Places to Eat Across Cities</h2>
 				<div className="row">
 					<div className="col-lg-3">
-						<CityComponent cityName='Best Restaurants in Bangalore' />
+						<CityComponent cityName='Chinese Restaurant Near Me' />
 					</div>
 					<div className="col-lg-3">
-						<CityComponent cityName='Best Restaurants in Pune' />
+						<CityComponent cityName='SouthIndian Restaurant Near Me' />
 					</div>
 					<div className="col-lg-3">
-						<CityComponent cityName='Best Restaurants in Mumbai' />
+						<CityComponent cityName='Indian Restaurant Near Me' />
 					</div>
 					<div className="col-lg-3">
-						<CityComponent cityName='Best Restaurants in Delhi' />
+						<CityComponent cityName='Kerala Restaurant Near Me' />
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-lg-3 ">
-						<CityComponent cityName='Best Restaurants in Hyderbad' />
+						<CityComponent cityName='Korean Restaurant Near Me' />
 					</div>
 					<div className="col-lg-3">
-						<CityComponent cityName='Best Restaurants in Kolkata' />
+						<CityComponent cityName='North Indian Restaurant Near Me' />
 					</div>
 					<div className="col-lg-3">
-						<CityComponent cityName='Best Restaurants in Chennai' />
+						<CityComponent cityName='Seafood Restaurant Near Me' />
 					</div>
 					<div className="col-lg-3">
-						<CityComponent cityName='Best Restaurants in Chandigarh' />
+						<CityComponent cityName='Bengali Restaurant Near Me' />
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-lg-3 ">
-						<CityComponent cityName='Best Restaurants in Ahmedabad' />
+						<CityComponent cityName='Punjabi Restaurant Near Me' />
 					</div>
 					<div className="col-lg-3">
-						<CityComponent cityName='Best Restaurants in Jaipur' />
+						<CityComponent cityName='Italian Restaurant Near Me' />
 					</div>
 					<div className="col-lg-3">
-						<CityComponent cityName='Best Restaurants in Nagpur' />
+						<CityComponent cityName='Andhra Restaurant Near Me' />
 					</div>
 					<div className='col-lg-3'>
 						<div className='cities'>
@@ -64,4 +64,4 @@ const CitiesComponent = () => {
   )
 }
 
-export default CitiesComponent
+export default CusinesComponent

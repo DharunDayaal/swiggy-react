@@ -4,6 +4,7 @@ import MindComponent from '../component/MindComponent'
 import TopRestaurantComponent from '../component/TopRestaurantComponent'
 import OnlineDeliveryContainer from '../component/OnlineDeliveryContainer'
 import CitiesComponent from '../component/CitiesComponent'
+import CusinesComponent from '../component/CusinesComponent'
 
 const HomeLayout = () => {
   return (
@@ -13,6 +14,7 @@ const HomeLayout = () => {
         <TopRestaurantComponent />
         <OnlineDeliveryContainer />
         <CitiesComponent />
+        <CusinesComponent />
     </>
   )
 }
