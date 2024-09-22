@@ -9,12 +9,12 @@ import CusinesComponent from '../component/CusinesComponent'
 const HomeLayout = () => {
   return (
     <>
-        <NavbarComponent />
-        <MindComponent />
-        <TopRestaurantComponent />
-        <OnlineDeliveryContainer />
-        <CitiesComponent />
-        <CusinesComponent />
+      <NavbarComponent />
+      <MindComponent />
+      <TopRestaurantComponent />
+      <OnlineDeliveryContainer />
+      <CitiesComponent />
+      <CusinesComponent />
     </>
   )
 }
