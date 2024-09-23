@@ -5,6 +5,9 @@ import TopRestaurantComponent from '../component/TopRestaurantComponent'
 import OnlineDeliveryContainer from '../component/OnlineDeliveryContainer'
 import CitiesComponent from '../component/CitiesComponent'
 import CusinesComponent from '../component/CusinesComponent'
+import AppContainer from '../component/AppContainer'
+import ExploreComponent from '../component/ExploreComponent'
+import FooterComponent from '../component/FooterComponent'
 
 const HomeLayout = () => {
   return (
@@ -15,6 +18,9 @@ const HomeLayout = () => {
       <OnlineDeliveryContainer />
       <CitiesComponent />
       <CusinesComponent />
+      <ExploreComponent /> 
+      <AppContainer />
+      <FooterComponent />
     </>
   )
 }

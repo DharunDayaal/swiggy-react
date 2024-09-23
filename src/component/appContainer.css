@@ -1,0 +1,29 @@
+.apps {
+    width: 100%;
+    margin: 9rem 0 0 0;
+    background-color: #f0f0f5;
+    overflow-x: hidden;
+}
+
+.apps .row {
+    padding: 16px 22%;
+    margin: 0;
+    height: auto;
+}
+
+.apps .row .text {
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-stretch: normal;
+    letter-spacing: 0.3px;
+    line-height: 1/8rem;
+}
+
+.apps a {
+    width: 100%;
+}
+
+.apps img {
+    width: 200px;
+}

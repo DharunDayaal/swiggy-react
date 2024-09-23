@@ -1,0 +1,189 @@
+.footer-container {
+    background: #000;
+    width: 100%;
+    height: auto;
+    padding: 2% 18% 8% 18%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5%;
+}
+
+.address-container .address-icon {
+    width: 100%;
+    display: inline-flex;
+    height: fit-content;
+}
+
+.address-container .address-icon img{
+    width: 16%;
+}
+
+.address-container .address-icon h5 {
+    width:fit-content;
+    margin: 4px 0 0 8px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F0F0F5;
+}
+
+.address-container div {
+    margin-top: 6px;
+    color: #F0F0F5;
+}
+
+.swiggy-pages ul,
+.contact-section ul,
+.legal-section ul,
+.cities-section ul {
+    list-style: none;
+}
+
+.swiggy-pages .footer-heading,
+.contact-section .footer-heading,
+.legal-section .footer-heading,
+.cities-section .footer-heading {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
+    font-style: normal;
+    color: #F0F0F5;
+}
+
+.swiggy-pages .footer-body,
+.contact-section .footer-body,
+.legal-section .footer-body,
+.cities-section .footer-body {
+    padding: 8px 0 8px 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.swiggy-pages .footer-body a,
+.contact-section .footer-body a,
+.legal-section .footer-body a,
+.cities-section .footer-body a {
+    color: #9f9e9e;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.4px;
+    text-decoration: none;
+}
+
+.swiggy-pages .footer-body a:active,
+.contact-section .footer-body a:active,
+.legal-section .footer-body a:active,
+.cities-section .footer-body a:active {
+    color: #9f9e9e;
+    text-decoration: none;
+}
+
+.legal-section {
+    margin-top: 40px;
+}
+
+.cities-section .footer-button {
+    border: 1px solid rgba(237, 235, 235, 0.2);
+    color: #9f9e9e;
+    text-align: start;
+    padding: 4px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    width: 88px;
+    height: 28px;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+
+@media (max-width: 1200px) {
+    .footer-container {
+        padding: 2% 10% 8% 10%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-container {
+        padding: 2% 5% 8% 5%;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4%;
+    }
+
+    .address-container .address-icon h5 {
+        font-size: 20px;
+    }
+
+    .swiggy-pages .footer-heading,
+    .contact-section .footer-heading,
+    .legal-section .footer-heading,
+    .cities-section .footer-heading {
+        font-size: 18px;
+    }
+
+    .swiggy-pages .footer-body a,
+    .contact-section .footer-body a,
+    .legal-section .footer-body a,
+    .cities-section .footer-body a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 5% 5% 8% 5%;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .address-container .address-icon h5 {
+        font-size: 18px;
+    }
+
+    .swiggy-pages .footer-heading,
+    .contact-section .footer-heading,
+    .legal-section .footer-heading,
+    .cities-section .footer-heading {
+        font-size: 16px;
+    }
+
+    .swiggy-pages .footer-body a,
+    .contact-section .footer-body a,
+    .legal-section .footer-body a,
+    .cities-section .footer-body a {
+        font-size: 12px;
+    }
+
+    .cities-section .footer-button {
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        padding: 8% 5% 8% 5%;
+    }
+
+    .address-container .address-icon img {
+        width: 20%;
+    }
+
+    .address-container .address-icon h5 {
+        font-size: 16px;
+    }
+
+    .swiggy-pages .footer-heading,
+    .contact-section .footer-heading,
+    .legal-section .footer-heading,
+    .cities-section .footer-heading {
+        font-size: 14px;
+    }
+
+    .swiggy-pages .footer-body a,
+    .contact-section .footer-body a,
+    .legal-section .footer-body a,
+    .cities-section .footer-body a {
+        font-size: 12px;
+    }
+}
