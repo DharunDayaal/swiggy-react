@@ -5,7 +5,7 @@ const NavItemComponent = ({name, svgElement}) => {
   return (
     <>
         <div className="nav-item">
-            <div className="listOfNavItems">
+            <div className="listOfNavItems ms-md-0">
                 <>{svgElement}</>
                 <h5>{name}</h5>
             </div>

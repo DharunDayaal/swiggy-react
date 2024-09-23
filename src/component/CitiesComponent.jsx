@@ -13,44 +13,44 @@ const CitiesComponent = () => {
       <div className='cities-container'>
 				<h2>Best Places to Eat Across Cities</h2>
 				<div className="row">
-					<div className="col-lg-3">
+					<div className="col-lg-3 col-md-6 mb-lg-0 mb-sm-2 mb-md-3 mb-sm-3 mb-2">
 						<CityComponent cityName='Best Restaurants in Bangalore' />
 					</div>
-					<div className="col-lg-3">
+					<div className="col-lg-3 col-md-6 mb-lg-0 mb-sm-2 mb-md-3 mb-sm-3 mb-2">
 						<CityComponent cityName='Best Restaurants in Pune' />
 					</div>
-					<div className="col-lg-3">
+					<div className="col-lg-3 col-md-6 mb-lg-0 mb-sm-2 mb-md-3 mb-sm-3 mb-2">
 						<CityComponent cityName='Best Restaurants in Mumbai' />
 					</div>
-					<div className="col-lg-3">
+					<div className="col-lg-3 col-md-6">
 						<CityComponent cityName='Best Restaurants in Delhi' />
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-lg-3 ">
+					<div className="col-lg-3 col-md-6 mb-lg-0 mb-sm-2 mb-md-3 mb-sm-3 mb-2">
 						<CityComponent cityName='Best Restaurants in Hyderbad' />
 					</div>
-					<div className="col-lg-3">
+					<div className="col-lg-3 col-md-6 mb-lg-0 mb-sm-2 mb-md-3 mb-sm-3 mb-2">
 						<CityComponent cityName='Best Restaurants in Kolkata' />
 					</div>
-					<div className="col-lg-3">
+					<div className="col-lg-3 col-md-6 mb-lg-0 mb-sm-2 mb-md-3 mb-sm-3 mb-2">
 						<CityComponent cityName='Best Restaurants in Chennai' />
 					</div>
-					<div className="col-lg-3">
+					<div className="col-lg-3 col-md-6">
 						<CityComponent cityName='Best Restaurants in Chandigarh' />
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-lg-3 ">
+					<div className="col-lg-3 col-md-6 mb-lg-0 mb-sm-2 mb-md-3 mb-sm-3 mb-2">
 						<CityComponent cityName='Best Restaurants in Ahmedabad' />
 					</div>
-					<div className="col-lg-3">
+					<div className="col-lg-3 col-md-6 mb-lg-0 mb-sm-2 mb-md-3 mb-sm-3 mb-2">
 						<CityComponent cityName='Best Restaurants in Jaipur' />
 					</div>
-					<div className="col-lg-3">
+					<div className="col-lg-3 col-md-6 mb-lg-0 mb-sm-2 mb-md-3 mb-sm-3 mb-2">
 						<CityComponent cityName='Best Restaurants in Nagpur' />
 					</div>
-					<div className='col-lg-3'>
+					<div className='col-lg-3 col-md-6'>
 						<div className='cities'>
 							<div className='d-lg-flex justify-content-lg-center align-items-lg-center'>
 								{'Show more'}

@@ -100,13 +100,14 @@
 @media (max-width: 1200px) {
     .footer-container {
         padding: 2% 10% 8% 10%;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 992px) {
     .footer-container {
         padding: 2% 5% 8% 5%;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 4%;
     }
@@ -133,7 +134,8 @@
 @media (max-width: 768px) {
     .footer-container {
         padding: 5% 5% 8% 5%;
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 0;
     }
 
@@ -162,6 +164,7 @@
 
 @media (max-width: 576px) {
     .footer-container {
+        grid-template-columns: repeat(1, 1fr);
         padding: 8% 5% 8% 5%;
     }
 

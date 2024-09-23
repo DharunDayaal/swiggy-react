@@ -32,16 +32,16 @@ const NavbarComponent = () => {
 
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid ps-md-3 pe-md-3 pt-md-2 pb-md-2">
         <div className="nav w-100">
           <div className="nav-item other-icon">
             <img src="/swiggy-1.svg" alt="siggy-icon" />
-            <div className="container w-auto d-lg-flex justify-content-lg-between align-items-lg-center">
+            <div className="container w-auto d-lg-flex justify-content-lg-between align-items-lg-center d-md-flex justify-content-md-between align-items-md-center d-sm-flex justify-content-sm-between align-items-sm-center d-flex justify-content-between align-items-center">
               <h5>Other</h5>
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff5e00"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </div>
           </div>
-          <div className="d-lg-flex flex-lg-row justify-content-lg-between algin-items-lg-center">
+          <div className="d-lg-flex flex-lg-row justify-content-lg-between algin-items-lg-center d-md-flex justify-content-md-between align-items-md-center">
             <NavItemComponent name="Swiggy Corporates" svgElement={icons.corporateIcon} />
             <NavItemComponent name="Search" svgElement={icons.SearchIcon} />
             <NavItemComponent name="Offers" svgElement={icons.OfferIcon} />

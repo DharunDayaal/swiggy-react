@@ -25,7 +25,7 @@ const RestaurantComponent = () => {
       <div className="container mt-5 mb-2">
         <div className="row">
           {cardData.map(({ restaurant, discount, rating, price, delivery_time, cuisine, location, image }, index) => (
-            <div className="col-md-3 mb-4" key={index}>
+            <div className="col-md-6 mb-4" key={index}>
               <RestaurantCardComponent
                 restaurant={restaurant}
                 discount={discount}

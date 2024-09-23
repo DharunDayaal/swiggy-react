@@ -86,7 +86,7 @@ const TopRestaurantComponent = () => {
   return (
     <>
       <div className="top-container">
-        <div className="d-lg-flex flex-lg-row justify-content-lg-between align-items-center">
+        <div className="d-lg-flex d-md-flex flex-lg-row flex-md-row justify-content-lg-between justify-content-md-between align-items-lg-center align-items-md-center ">
           <h2>Top restaurant chains in Chennai</h2>
           <div className="btn-group-lg btn-group-sm">
             <button className="prev-btn me-lg-3 me-md-3 me-3" onClick={handleRestaurantPreviousButton}>
