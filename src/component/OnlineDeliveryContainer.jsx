@@ -12,7 +12,7 @@ const OnlineDeliveryContainer = () => {
         </h2>
         <div className="row mb-lg-4 mb-4 mb-md-4">
           <FileterOptionsContainer filterOptionName="Filter" svgName="/filter-icon.png"/>
-          <FileterOptionsContainer filterOptionName="Sort By" svgName="./src/assets/icons/downArrow.svg"/>
+          <FileterOptionsContainer filterOptionName="Sort By" svgName="/downArrow.svg"/>
           <FileterOptionsContainer filterOptionName="Fast Delivery" svgName=""/>
           <FileterOptionsContainer filterOptionName="New on Swiggy" svgName=""/>
           <FileterOptionsContainer filterOptionName="Ratings 4.0+" svgName=""/>

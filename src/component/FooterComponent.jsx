@@ -7,7 +7,7 @@ const FooterComponent = () => {
         <div className="footer-container">
             <div className="address-container">
                 <div className="address-icon">
-                    <img src="./src/assets/icons/swiggy_footer_icon.svg" alt="swiggy-icon" />
+                    <img src="/swiggy_footer_icon.svg" alt="swiggy-icon" />
                     <h5>Swiggy</h5>
                 </div>
                 <div>
