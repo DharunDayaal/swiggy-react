@@ -71,6 +71,12 @@
     transition: transform 0.25s;
 }
 
+.card:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: transform 0.25s;
+}
+
 .card img{
     width: 15.9rem;
     height: 8rem;

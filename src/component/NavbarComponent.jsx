@@ -32,7 +32,7 @@ const NavbarComponent = () => {
 
   return (
     <>
-      <div className="container-fluid ps-md-3 pe-md-3 pt-md-2 pb-md-2">
+      <div className="container-fluid ">
         <div className="nav w-100">
           <div className="nav-item other-icon">
             <img src="/swiggy-1.svg" alt="siggy-icon" />
